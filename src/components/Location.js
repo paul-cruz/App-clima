@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Location = (props) => {
     const { city } = props; //const city = props.city; se debn llamar igual Destructuring
