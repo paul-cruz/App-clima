@@ -1,0 +1,35 @@
+.weatherDataCont{
+    background-color: cornflowerblue;
+    width: 25%;
+    line-height: 150%;
+}
+
+.weatherExtraInfoCont{
+    width: 40%;
+    margin: 1em;
+    display: inline-block;
+    align-self: flex-end;
+}
+
+.weatherExtraInfoCont  span{
+    display: block;
+}
+
+.weatherTemperatureCont{
+    width: 50%;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.weatherTemperatureCont  .temperature{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.weatherTemperatureCont  .unity{
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 3%;
+    vertical-align: super;
+}

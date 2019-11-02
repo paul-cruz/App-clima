@@ -9,6 +9,8 @@ import {
     ECLIPSE
 } from './../../constants/weathers';
 
+import './styles.css';
+
 const stateToIconName = (weatherState) => {
     switch (weatherState) {
         case CLOUD:
@@ -27,15 +29,16 @@ const stateToIconName = (weatherState) => {
 };
 
 const getWeatherIcon = (weatherState) => {
-    return (<WeatherIcons name={stateToIconName(weatherState)} size="3x" />);
+    return (<WeatherIcons name={stateToIconName(weatherState)} size="4x" />);
 };
 
 
 const WeatherTemperature = ({ temperature, weatherState }) => {
     return (
-        <div>
+        <div className="weatherTemperatureCont">
             {getWeatherIcon(weatherState)}
-            <span> {`${temperature}  C°`}</span>
+            <span className="temperature"> {`${temperature}`}</span>
+            <span className="unity">°C</span>
         </div>
     );
 };
