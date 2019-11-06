@@ -1,14 +1,15 @@
 .weatherDataCont{
-    background-color: cornflowerblue;
-    width: 25%;
+    width: 100%;
     line-height: 150%;
+    display: inline-grid;
+    grid-template-columns: [c1-s] 50% [c1-e c2-s] 50% [c2-e];
 }
 
 .weatherExtraInfoCont{
-    width: 40%;
-    margin: 1em;
-    display: inline-block;
-    align-self: flex-end;
+    color: rgba(3, 11, 124, 0.959);
+    font-weight: bold;
+    margin: 1em 1em 1em 2em;
+    grid-column: c2-s /c2-e;
 }
 
 .weatherExtraInfoCont  span{
@@ -16,15 +17,19 @@
 }
 
 .weatherTemperatureCont{
-    width: 50%;
-    display: inline-block;
-    align-self: flex-start;
+    grid-column: c1-s /c1-e;
+    color: #00051f;
 }
 
 .weatherTemperatureCont  .temperature{
     font-size: xx-large;
     font-weight: bold;
     padding-left: 5%;
+}
+
+.weatherTemperatureCont  .icono{
+    vertical-align: middle;
+    color: dodgerblue;
 }
 
 .weatherTemperatureCont  .unity{
