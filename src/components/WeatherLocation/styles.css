@@ -2,6 +2,9 @@
 .weatherLocationCont{
     width: 25%;
     font-family: 'Merriweather', 'swap';
+    -webkit-box-shadow: 14px 25px 28px -8px rgba(47,43,99,0.67);
+    -moz-box-shadow: 14px 25px 28px -8px rgba(47,43,99,0.67);
+    box-shadow: 14px 25px 28px -8px rgba(47,43,99,0.67);
 }
 
 .LocationCont{
