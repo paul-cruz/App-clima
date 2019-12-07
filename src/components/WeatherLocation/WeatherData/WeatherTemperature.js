@@ -7,7 +7,7 @@ import {
     SNOW,
     WINDY,
     ECLIPSE
-} from './../../constants/weathers';
+} from '../../../constants/weathers';
 
 import './styles.css';
 
