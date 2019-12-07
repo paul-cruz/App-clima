@@ -17,22 +17,26 @@
 }
 
 .weatherTemperatureCont{
+    display: block;
     grid-column: c1-s /c1-e;
     color: #00051f;
 }
 
 .weatherTemperatureCont  .temperature{
+    display: inline-block;
     font-size: xx-large;
     font-weight: bold;
     padding-left: 5%;
 }
 
 .weatherTemperatureCont  .icono{
+    display: inline-block;
     vertical-align: middle;
     color: dodgerblue;
 }
 
 .weatherTemperatureCont  .unity{
+    display: inline-block;
     font-size: medium;
     font-weight: bold;
     padding-left: 3%;
