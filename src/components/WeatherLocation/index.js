@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Location from './Location';
 import WeatherData from './WeatherData';
+import transformWeather from './../../services/transformWeather';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import './styles.css';
-import transformWeather from './../../services/transformWeather'
 
 const LOCATION = 'Mexico City,mx'
 const APIKEY = '6c7131d55ffca39c24563132be4d3bf2'
@@ -31,7 +32,7 @@ class WeatherLocation extends Component {
                 })
             }
         );
-        console.log("Actualizado");
+        console.log("Updated");
     }
 
     UNSAFE_componentWillMount() {
@@ -45,10 +46,10 @@ class WeatherLocation extends Component {
                 <Location city={city}></Location>
                 {data?
                 <WeatherData data={data}/>
-                :'Cargando...'}
+                :<CircularProgress/>}
             </div>
         );
     };
-};
+}
 
 export default WeatherLocation;
